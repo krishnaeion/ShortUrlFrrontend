@@ -1,0 +1,13 @@
+<app-header [headerName]="header"></app-header>
+<nb-card>
+    <nb-card-header>
+      Shorten URL
+    </nb-card-header>
+    <nb-card-body>
+      <input nbInput [(ngModel)]="longUrl" placeholder="Enter a long URL" />
+      <button class="Button" (click)="shortenUrl()">Shorten</button>
+      <div *ngIf="isShortened" >
+        Shortened URL: <a [ngClass]="{ 'disabled-link': isExpired }" (click)="openShortenedUrl()">{{ shortenedUrl }}</a>
+      </div>
+    </nb-card-body>
+  </nb-card>

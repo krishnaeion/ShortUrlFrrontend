@@ -1,0 +1,57 @@
+nb-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Add padding to the content inside the nb-card */
+  nb-card-body {
+    padding: 20px;
+  }
+  nb-card-header {
+    background-color: #007bff;
+    color: #fff;
+  }
+  nb-card-footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #ddd;
+    padding: 15px;
+    text-align: right;
+  }
+  nb-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  /* Basic button styles */
+.Button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #3498db;
+    color: #3498db;
+    background-color: #00008b;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    position:relative;
+    left:2px;
+    bottom: 2px;
+  }
+  
+  /* Hover styles */
+  .Button:hover {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  /* Active/Clicked styles */
+  .Button:active {
+    background-color: #2980b9;
+    color: #fff;
+  }
