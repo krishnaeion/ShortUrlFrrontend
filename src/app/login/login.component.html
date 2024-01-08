@@ -1,0 +1,24 @@
+
+<app-header [headerName]="header"></app-header>
+<nb-layout>
+
+   
+    <nb-layout-column>
+      <nb-card>
+        <nb-card-header>Login</nb-card-header>
+  
+        <nb-card-body>
+          <form (ngSubmit)="onSubmit()">
+            
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" [(ngModel)]="username" required><br>
+  
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" [(ngModel)]="password" required><br>
+            <button  class="Button" type="submit">Login</button>
+            <button type="button" class="Button"(click)="register()">Register</button>
+          </form>
+        </nb-card-body>
+      </nb-card>
+    </nb-layout-column>
+  </nb-layout>

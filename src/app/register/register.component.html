@@ -1,0 +1,30 @@
+<app-header [headerName]="header"></app-header>
+<nb-layout>
+    <nb-layout-column>
+      <nb-card>
+        <nb-card-header>Register</nb-card-header>
+  
+        <nb-card-body>
+          <form (ngSubmit)="onSubmit()">
+            
+            <label  for="userName">User Name:</label><br>
+            <input type="userName" id="userName" name="userName" [(ngModel)]="registrationData.userName" required><br>
+
+            <label for="fullName">Full Name:</label><br>
+            <input type="fullName" id="fullName" name="fullName" [(ngModel)]="registrationData.fullName" required><br>
+
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email" [(ngModel)]="registrationData.email" required><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" [(ngModel)]="registrationData.password" required><br>
+
+            <label for="mobileNumber">MobileNumber:</label><br>
+            <input type="mobileNumber" id="mobileNumber" name="mobileNumber" [(ngModel)]="registrationData.mobileNumber" required><br>
+
+            <button class="Button" type="submit">Register</button>
+          </form>
+        </nb-card-body>
+      </nb-card>
+    </nb-layout-column>
+  </nb-layout>
