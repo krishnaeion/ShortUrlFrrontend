@@ -18,8 +18,7 @@ export class ShortUrlComponent implements OnInit {
   ngOnInit(): void {
   }
   shortenUrl() {
-    // Call your URL shortening service here
-    // For illustration purposes, assume you have a method in urlShortenerService for shortening URLs
+   
     this.shortUrlServiceService.shortenUrl(this.longUrl).subscribe(
       (response:any) => {
         this.shortenedUrl = response.shortUrl;

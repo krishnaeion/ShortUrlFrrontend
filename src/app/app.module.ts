@@ -8,7 +8,7 @@ import { NbThemeModule, NbLayoutModule, NbCardModule, NbButtonModule,NbActionsMo
 import { RouterModule } from '@angular/router';
 import { NbAuthJWTToken, NbAuthModule, NbPasswordAuthStrategy} from '@nebular/auth';
 import { routes } from './app-routes';
-import { FormsModule } from '@angular/forms'; // Import FormsModule
+import { FormsModule } from '@angular/forms'; 
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './header/header.component'; 
 
@@ -35,15 +35,12 @@ import { HeaderComponent } from './header/header.component';
       strategies: [
         NbPasswordAuthStrategy.setup({
           name: 'email',
-          baseEndpoint: 'http://localhost:3000', // Replace with your API endpoint
+          baseEndpoint: 'http://localhost:3000', 
           login: {
             endpoint: '/login',
             method: 'post',
           },
-          token: {
-            class: NbAuthJWTToken, // Type of token (JWT in this case)
-            key: 'access_token', // Token key in the response from the server
-          },
+       
           register: {
             endpoint: '/register',
             method: 'post',
